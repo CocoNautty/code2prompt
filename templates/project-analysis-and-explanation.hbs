@@ -1,0 +1,56 @@
+Project Path: {{ absolute_code_path }}
+
+I need your help to learn how the project is structured and how it is implemented. Here are the files involved:
+
+Source Tree:
+```
+{{ source_tree }}
+```
+
+{{#each files}} 
+{{#if code}}
+`{{path}}`: 
+
+{{code}}
+
+{{/if}}
+{{/each}}
+
+Learning from the source code of an open-source project can be a rewarding experience, especially if you approach it methodically. Here’s a structured way to analyze and understand the codebase:
+
+1. Read the Documentation
+
+- Understand the Purpose: Read through the README.md file.
+- Explore Additional Docs: Look for other documentation files, like CONTRIBUTING.md, INSTALL.md, or a wiki.
+
+2. Explore the Directory Structure
+
+- Identify Key Directories: Look for directories like `src`, `lib`, `tests`, `docs`, and `examples`. Each typically serves a specific purpose:
+  - `src` or `lib`: Main source code.
+  - `tests`: Unit and integration tests.
+  - `docs`: Documentation files.
+  - `examples`: Sample code or usage examples.
+- File Naming Conventions: Note naming conventions and organization patterns (like MVC, services, etc.).
+
+3. Understand the Code Structure
+
+- Entry Points: Identify the main entry point of the application (like `main()` in Java or `app.js` in Node.js) to understand how the application starts.
+- Modules and Components: Break down the code into modules or components. Understand how they interact with each other.
+- Classes and Functions: Look at the classes and functions defined in the project. Pay attention to their purpose, parameters, and return values.
+
+4. Follow the Logic
+
+- Trace Execution Flow: Use a debugger or insert logs to follow the execution flow, especially for critical paths.
+- Check for Dependencies: Understand how different modules depend on each other. Look for import/export statements or dependency injection.
+
+5.. Analyze Design Patterns
+
+- Identify Patterns: Look for common design patterns (Singleton, Factory, MVC, etc.) used in the code. This will help you understand the architectural decisions.
+- Evaluate Best Practices: Note how the code adheres to best practices, such as separation of concerns, code reusability, and readability.
+
+6. Review Tests
+
+- Read the Tests: Look at the test cases to understand the expected behavior of the code. Tests often provide insights into how different components are supposed to interact.
+- Explore Testing Frameworks: Familiarize yourself with the testing frameworks used (like Jest, JUnit, or PyTest) and how tests are structured.
+
+After analyzing the codebase, summarize your findings and provide insights into the project structure, design patterns, and implementation details. Give specific examples if necessary.
